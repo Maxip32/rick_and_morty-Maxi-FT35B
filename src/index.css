@@ -8,8 +8,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: url("https://wallup.net/wp-content/uploads/2018/03/23/566352-Rick_Sanchez-Morty_Smith-Rick_and_Morty-TV-Adult_Swim.jpg")
-
+  background: url("https://images3.alphacoders.com/812/812062.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 
 code {

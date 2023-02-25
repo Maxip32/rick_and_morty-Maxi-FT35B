@@ -1,15 +1,20 @@
 import SearchBar from "./SearchBar"
-import { Link, NavLink } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import "./Nav.css";
 
 const Nav= ({onSearch})=>{
-    return(
+   return(
 <nav>
-    <Link to="about">About</Link>
-    
-    
-    <Link to="home">Home</Link>
 <SearchBar onSearch={onSearch}/>
+
+<div className="stiloslinks">
+
+    <Link to="home" >    <span>Home</span>    </Link>
+    <Link to="about">   <span>About</span>   </Link>
+    <Link to= "/"  >    <span>Logout</span>     </Link>
+
+
+</div>
 
 </nav>
 

@@ -1,5 +1,5 @@
 import Card from './Card';
-
+import "./card.css"
 function Cards({characters, onClose}) {
    
 
@@ -8,7 +8,7 @@ function Cards({characters, onClose}) {
    return (
    
    
-   <div>
+   <div className='posicioncard'>
  {
 
 
@@ -17,6 +17,7 @@ characters.map(({id, name, species, gender, image})=>{
 
   
 return <Card
+
 key={characters.id}
 id = {id}
 name = {name}

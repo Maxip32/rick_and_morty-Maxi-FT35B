@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import "./Detail.css";
 
 
 const Detail= ()=>{
@@ -28,8 +28,8 @@ useEffect(() => {
 
 return(
 
-<div>
-  <button>
+<div className="configdetalle">
+  <button className="botonhome">
     <Link to="/home">Home</Link>
   </button>
 
@@ -39,7 +39,7 @@ return(
 <p> {character?.species} </p>
 <p> {character?.gender}  </p>
 <p> {character?.origin?.name} </p>
-<img src={character?.image} alt="" />
+<img className="detail__image" src={character?.image} alt="" />
 </div>
 
 

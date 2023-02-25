@@ -11,7 +11,7 @@ export default function Card({id, name, gender, onClose, species, image}) {
          </Link>
          <h2 className="letras2">{species}</h2>
          <h2 className="letras2">{gender}</h2>
-         <img  src={image} alt={name} />
+         <img className="imgcards" src={image} alt={name} />
       </div>
    );
 }

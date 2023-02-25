@@ -1,6 +1,8 @@
 .letras{
-
+    
+    flex-direction: row;
     color:blanchedalmond
+    
 }
 
 .letras2{
@@ -34,5 +36,22 @@
     transform: scale(1.2);
     color: white;
     background-color: black;
+
+}
+.posicioncard{
+    
+    width: 98%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    
+
+}
+.imgcards:hover{
+
+    transform: scale(1.1);
+    transition: 1.2s;
+    cursor: zoom-in;
 
 }

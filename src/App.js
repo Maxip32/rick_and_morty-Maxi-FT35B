@@ -4,9 +4,10 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Detail from './components/Detail';
 import { useState } from 'react';
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import {Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Form from "./components/Form.jsx";
+import Favorites from './components/Favorites/Favorites';
 
 function App () {
 
@@ -63,6 +64,7 @@ function App () {
 <Route   path="/home" element={<Cards onClose={Cerrar} characters={characters} />}/>
 <Route   path="/about" element={<About/>}/>
 <Route   path="detail/:detailId" element={<Detail/>}/>
+<Route   path="/favorites" element={<Favorites/>}/>
   </Routes>
   
   </div>

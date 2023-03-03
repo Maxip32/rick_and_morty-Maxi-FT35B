@@ -43,15 +43,15 @@ useEffect(() => {
    isFav ? (
       <button onClick={handleFavorite}>❤️</button>
    ) : (
-      <button onClick={handleFavorite}>🤍</button>
+      <button color="black" onClick={handleFavorite}>♥</button>
    )
    }
           <button className="Boton" onClick={()=> onClose(id)}>X</button>
          <Link to= {`/detail/${id}`}>
          <h2 className="letras2">{name}</h2>
          </Link>
-         <h2 className="letras2">{species}</h2>
-         <h2 className="letras2">{gender}</h2>
+         {/* <h2 className="letras2">{species}</h2>
+         <h2 className="letras2">{gender}</h2> */}
          <img className="imgcards" src={image} alt={name} />
       </div>
    );

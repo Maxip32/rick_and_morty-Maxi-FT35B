@@ -1,0 +1,57 @@
+.letras{
+    
+    flex-direction: row;
+    color:blanchedalmond
+    
+}
+
+.letras2{
+
+    color:rgb(40, 224, 4);
+    max-width: fit-content;
+    margin: auto;
+    text-shadow: 1px 1px white;
+
+    
+
+}
+
+.letras img{
+
+    border: 5px solid green;
+    border-radius: 190px ;
+    box-shadow: 4px 6px 9px rgb(247, 244, 244);
+
+}
+
+.Boton{
+
+    color:black;
+    background-color: white ;
+}
+
+.Boton:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+
+}
+.posicioncard{
+    
+    width: 98%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    
+
+}
+.imgcards:hover{
+
+    transform: scale(1.1);
+    transition: 1.2s;
+    cursor: zoom-in;
+
+}

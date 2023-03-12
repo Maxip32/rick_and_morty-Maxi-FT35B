@@ -39,9 +39,10 @@ function App () {
     
       }
     
-  const onSearch= (characters)=>{
-
-    fetch(`http://localhost:3001/rickandmorty/character/${characters}`)
+  const onSearch= async (characters)=>{
+//console.log(characters, "esto es lo q buscamos")
+    await fetch(`http://localhost:3001/onsearch/${characters}`)
+    
       .then((response) => response.json())
       .then((data) => {
          if (data.name) {

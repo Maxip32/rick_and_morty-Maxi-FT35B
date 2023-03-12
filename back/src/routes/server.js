@@ -1,17 +1,28 @@
-const http= require("http");
-const characters= require("../../utils/data")
+const express = require("express");
+const server = express();
+const PORT = 3001; 
+const router = require("./index.js");
+const bodyParser = require('body-parser'); 
 
-http.createServer((req, res)=>{
+server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+server.use(bodyParser.json({ limit: '50mb' })); 
+// Configuración con problema de CORS
+// npm install cors --save
+// ---
+const cors = require("cors");
+const corsOptions = {
+    origin: "*",
+    credentials: true, // access-control-allow-credentials: true
+    optionSuccessStatus: 200,
+};
+server.use(cors(corsOptions)); // Use this after the variable declaration
+// ---
 
-    res.setHeader("Access-Control-Allow-Origin", "*");
 
-    if(req.url.includes("rickandmorty/character")){
+server.use(express.json());
 
-        let id= req.url.split("/").at(-1);
-        let characterFilter= characters.find(char => char.id === Number(id));
+server.use("/", router);
 
-        res.writeHead(200, {"Content-type": "application/json"}).end(JSON.stringify(characterFilter))
-    }
-
-
-}).listen(3001, "localhost")
+server.listen(PORT, () => {
+    console.log("Server raised in port " + PORT);
+});

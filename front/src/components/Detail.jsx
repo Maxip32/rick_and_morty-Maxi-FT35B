@@ -9,7 +9,7 @@ const {detailId} = useParams();
 const [character, setCharacter]= useState();
 
 useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+    fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
       .then((response) => response.json())
       .then((char) => {
         if (char.name) {
@@ -28,6 +28,9 @@ useEffect(() => {
 
 return(
 
+
+<div>
+
 <div className="configdetalle">
   <button className="botonhome">
     <Link to="/home">Home</Link>
@@ -39,7 +42,11 @@ return(
 <p> {character?.species} </p>
 <p> {character?.gender}  </p>
 <p> {character?.origin?.name} </p>
-<img className="detail__image" src={character?.image} alt="" />
+<img className="detail__imagens" src={character?.image} alt="" />
+</div>
+
+
+
 </div>
 
 

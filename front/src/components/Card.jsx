@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { addFavorite, deleteFavorite } from "../redux/actions";
 import { useEffect } from "react";
+import trash from "../assets/delete_blue.png"
+import corazonfav from "../assets/favorite.png"
+import corazonunfav from "../assets/unfavorite.png"
 
 
 export default function Card({id, name, gender, onClose, species, image}) {
@@ -26,33 +29,42 @@ if(isFav){
 }
 
 useEffect(() => {
-   myFavorites.forEach((fav) => {
+   myFavorites.length > 0 && myFavorites.forEach((fav) => {
       if (fav.id === id) {
          setIsFav(true);
       }
    });
-}, [myFavorites]);
+}, [myFavorites, id]);
 
 
    return (
 
 
-  <div className="letras">
+  <div className="contenedor">
+<div className= "botnshead">
+
 
 {
+
    isFav ? (
-      <button onClick={handleFavorite}>❤️</button>
+      <button className="Btnfavorite" onClick={handleFavorite}><img src={corazonfav} alt="favorit" width="35px" height="35px"/></button>
    ) : (
-      <button color="black" onClick={handleFavorite}>♥</button>
+      <button  className="Btnfavorite"  onClick={handleFavorite}><img src={corazonunfav} alt="unfavorit" width="35px" height="35px"/></button>
    )
    }
-          <button className="Boton" onClick={()=> onClose(id)}>X</button>
+          <button className="BtnEliminar" onClick={()=> onClose(id)}><img src={trash} alt="Eliminar" width="35px" height="35px"/></button>
+
+</div>
+          
          <Link to= {`/detail/${id}`}>
-         <h2 className="letras2">{name}</h2>
+         <img className="imgcards" src={image} alt={name} />
+         {/* <h2 className="letras2">{name}</h2> */}
          </Link>
          {/* <h2 className="letras2">{species}</h2>
          <h2 className="letras2">{gender}</h2> */}
-         <img className="imgcards" src={image} alt={name} />
+         <div>
+         {/* <img className="imgcards" src={image} alt={name} /> */}
+        </div>
       </div>
    );
 }

@@ -9,8 +9,8 @@ const router = Router();
 router.get("/onsearch/:id", getCharById);
 router.get("/detail/:id", getCharDetail);
 
-router.post("/fav", addFav);
-router.get("/fav", getFavs);
-router.delete("/fav/:id", deleteFav);
+router.post("/favs", addFav);
+router.get("/favs", getFavs);
+router.delete("/favs/:id", deleteFav);
 
 module.exports = router;

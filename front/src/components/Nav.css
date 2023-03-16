@@ -44,8 +44,15 @@ border-radius: 80px;
     border-radius: 50px;
 }
 .stiloslinks h4{
-
+    color: azure;
+background-color: orangered;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
+}
 
+.botonNav{
+    color: azure;
+    background-color: orangered;
+    border-radius: 50px;
 }

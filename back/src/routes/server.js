@@ -21,7 +21,7 @@ server.use(cors(corsOptions)); // Use this after the variable declaration
 
 server.use(express.json());
 
-server.use("/", router);
+server.use("/rickandmorty", router);
 
 server.listen(PORT, () => {
     console.log("Server raised in port " + PORT);

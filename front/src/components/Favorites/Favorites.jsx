@@ -1,21 +1,27 @@
 import { useSelector, useDispatch } from "react-redux";
 import "./favorites.css"
 import { Link } from "react-router-dom";
-import { orderCards, filterCards } from "../../redux/actions";
+import { orderCards, filterCards, deleteFavorite } from "../../redux/actions";
+import trash from "../../assets/delete_blue.png"
+
 
 const Favorites= ()=>{
-    const {myFavorites}= useSelector(state=> state)
-    const dispatch= useDispatch();
-    const handlerOrder= (event)=>{
+  const {myFavorites}= useSelector(state=> state)
+  const dispatch= useDispatch();
+  const handlerOrder= (event)=>{
     dispatch(orderCards(event.target.value))
-
-    }
+    
+  }
+  const onClose= (id)=>{
+    dispatch(deleteFavorite(id))
+  }
 
     const handlerFilter= (event)=>{
       dispatch(filterCards(event.target.value))
   
       }
 
+     
     return(
 
   <div className="posicioncard">
@@ -40,24 +46,30 @@ const Favorites= ()=>{
 {
 
     
-    myFavorites.map((character)=>{
+    myFavorites.length > 0 && myFavorites.map((character)=>{
     return(
-        
+        <div className="contenedorfav">
             <div className="letras">
                  
         
+                 <button className="BtnEliminar" onClick={()=> onClose(character.id)}><img src={trash} alt="Eliminar" width="35px" height="35px"/></button>
          <Link to= {`/detail/${character.id}`}>
-         <h2 className="letras2">{character.name}</h2>
-         </Link>
-         <h2 className="letras2">{character.species}</h2>
-         <h2 className="letras2">{character.gender}</h2>
+         {/* <h2 className="letras2">{character.name}</h2> */}
          <img className="imgcards" src={character.image} alt={character.name} />
+         </Link>
+         {/* <h2 className="letras2">{character.species}</h2>
+         <h2 className="letras2">{character.gender}</h2> */}
       </div>
+
+
+
+        </div>
    
         )
     })
 }
  </div>
+ 
     )
 
         

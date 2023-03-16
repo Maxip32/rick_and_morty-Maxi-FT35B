@@ -1,6 +1,6 @@
 .configdetalle{
 
-    color: rgb(238, 141, 14);
+    color: rgb(0, 0, 17);
     font-weight: bold;
 }
 .botonhome{
@@ -10,9 +10,9 @@
     background-color: rgb(175, 235, 11);
 }
 
-.detail__image{
+.detail__imagens{
     border: 5px solid green;
-    border-radius: 190px ;
+    border-radius: 180px ;
     box-shadow: 4px 6px 9px rgb(247, 244, 244);
 }
 
@@ -20,4 +20,20 @@
     cursor: zoom-in;
     transform:scale(1.1);transform:scale(1.1);
     transition-duration: .4s;
+}
+.contenedordetail{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:solid 1px green;
+    box-shadow: 3px 4px 3px 4px;
+    
+    margin: 2px;
+    color:blanchedalmond;
+    width: fit-content;
+    height: fit-content;
+    display: inline;
+    justify-content: space-between;
+    
 }

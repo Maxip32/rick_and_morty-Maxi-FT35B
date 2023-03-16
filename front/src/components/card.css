@@ -1,7 +1,17 @@
-.letras{
-    
-    flex-direction: row;
-    color:blanchedalmond
+.contenedor{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:solid 1px green;
+    box-shadow: 3px 4px 3px 4px;
+    border-radius: 25px;
+    margin: 2px;
+    color:blanchedalmond;
+    width: fit-content;
+    height: fit-content;
+    display: inline;
+    justify-content: space-between;
     
 }
 
@@ -16,19 +26,42 @@
 
 }
 
-.letras img{
+.imgcards{
 
     border: 5px solid green;
-    border-radius: 190px ;
+    border-radius: 75px ;
     box-shadow: 4px 6px 9px rgb(247, 244, 244);
 
 }
 
-.Boton{
+ .BtnEliminar{
+    background-color: transparent;
+    border-radius: 180px;
+    box-shadow:none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    justify-self: flex-start;
+    display: flex;
+    align-items: center;
+    
+ }
 
-    color:black;
-    background-color: white ;
-}
+ .Btnfavorite{
+
+    background-color: transparent;
+    border-radius: 180px;
+    box-shadow:none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+ }
+
+   
+
 
 .Boton:hover{
 
@@ -54,4 +87,12 @@
     transition: 1.2s;
     cursor: zoom-in;
 
+}
+
+.botnshead{
+
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

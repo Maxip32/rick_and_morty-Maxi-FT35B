@@ -1,5 +1,8 @@
 .contenedor{
-    background-color: grey;
+
+    background-image: url("../assets/coverimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +10,7 @@
     box-shadow: 3px 4px 3px 4px;
     border-radius: 25px;
     margin: 2px;
-    color:blanchedalmond;
+    color:rgb(14, 196, 241);
     width: fit-content;
     height: fit-content;
     display: inline;

@@ -2,7 +2,7 @@
 
 display: flex;
 justify-content:space-around;
-background: green;
+background: rgb(9, 155, 240);
 border-radius: 50px;
 width: 100%;
 opacity: 0.8;
@@ -15,7 +15,7 @@ align-items: center;
  
 /* margin: 8px;
 padding: 5PX; */
-color: rgb(223, 7, 18);
+color: rgb(9, 128, 175);
 
 
 }
@@ -34,7 +34,7 @@ color: rgb(223, 7, 18);
 .Boton{
 
 color: rgb(7, 228, 209);
-background-color: green;
+background-color: rgb(6, 130, 146);
 border-radius: 80px;
 
 }
@@ -44,15 +44,15 @@ border-radius: 80px;
     border-radius: 50px;
 }
 .stiloslinks h4{
-    color: azure;
-background-color: orangered;
+    color: rgb(3, 126, 64);
+background-color: rgb(3, 201, 79);
     border-radius: 50px;
     display: flex;
     justify-content: center;
 }
 
 .botonNav{
-    color: azure;
-    background-color: orangered;
+    color: rgb(1, 31, 31);
+    background-color: rgb(7, 180, 59);
     border-radius: 50px;
 }

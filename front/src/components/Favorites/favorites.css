@@ -18,9 +18,9 @@
 
 .imgcards{
 
-    border: 5px solid green;
+    border: 3px solid rgb(97, 154, 230);
     border-radius: 190px ;
-    box-shadow: 4px 6px 9px rgb(247, 244, 244);
+    box-shadow: 4px 6px 9px rgb(3, 187, 243);
 
 }
 
@@ -34,7 +34,7 @@
 
     cursor: pointer;
     transform: scale(1.2);
-    color: white;
+    color: rgb(6, 133, 172);
     background-color: black;
 
 }
@@ -56,15 +56,17 @@
 
 }
 .contenedorfav{
-    background-color: grey;
+    background-image: url("../../assets/coverimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:solid 1px green;
+    border:solid 1px rgb(8, 147, 189);
     box-shadow: 3px 4px 3px 4px;
     border-radius: 25px;
     margin: 2px;
-    color:blanchedalmond;
+    color:rgb(10, 156, 201);
     width: fit-content;
     height: fit-content;
     display: inline;

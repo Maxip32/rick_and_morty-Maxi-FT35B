@@ -1,6 +1,7 @@
 import SearchBar from "./SearchBar"
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import logo from "../assets/logo.png"
 //import { useDispatch } from "react-redux";
 //import { getFavorite } from "../redux/actions";
 
@@ -8,6 +9,8 @@ const Nav= ({onSearch})=>{
     // const dispatch= useDispatch()
    return(
 <nav>
+<div>
+<img src={logo} alt="logo" width="300px" height="85px"/>
 
 <div className="stiloslinks">
 
@@ -21,6 +24,10 @@ const Nav= ({onSearch})=>{
     
     
     
+
+
+</div>
+
 
 
 </div>

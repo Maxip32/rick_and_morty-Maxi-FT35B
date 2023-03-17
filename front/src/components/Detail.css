@@ -1,7 +1,8 @@
 .configdetalle{
 
-    color: rgb(0, 0, 17);
+    color: rgb(49, 8, 104);
     font-weight: bold;
+
 }
 .botonhome{
     
@@ -11,9 +12,9 @@
 }
 
 .detail__imagens{
-    border: 5px solid green;
+    border: 3px solid rgb(7, 192, 238);
     border-radius: 180px ;
-    box-shadow: 4px 6px 9px rgb(247, 244, 244);
+    box-shadow: 4px 6px 9px rgb(12, 235, 243);
 }
 
 .detail__image:hover {

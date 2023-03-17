@@ -1,6 +1,7 @@
 import { useState } from "react";
 import validation from "./validation";
 import "./Form.css"
+import logo from "../../src/assets/logo.png"
 const Form=({login})=>{
 
     const [userData, setUserData] = useState({ username: '', password: '' });
@@ -35,8 +36,11 @@ event.preventDefault();
 }
 
     return(
-    
+    <div>
+<img src={logo} alt="logo" width="300px" height="85px"/>
+<br></br>
     <form onSubmit={handleSubmit}>
+
     <label htmlFor="username" style={{color:"red"}} >Username: </label>
 
     <input className="inpusuario" type="text" name="username" value={userData.username} onChange={handleInputChange} />
@@ -52,6 +56,9 @@ event.preventDefault();
         
 <button className="estilologin">LOGIN</button>
  </form>
+
+
+    </div>
     
 )
 

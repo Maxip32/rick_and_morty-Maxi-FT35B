@@ -67,13 +67,16 @@
 
 
 .Boton:hover{
-
-    cursor: pointer;
-    transform: scale(1.2);
-    color: white;
-    background-color: black;
+    animation:slidebg 2s linear infinite;
+    
 
 }
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
 .posicioncard{
     
     width: 98%;

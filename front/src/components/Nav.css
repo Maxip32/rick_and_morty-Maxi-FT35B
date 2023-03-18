@@ -32,7 +32,9 @@ color: rgb(9, 128, 175);
 }
 
 .Boton{
-
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 2s linear infinite;
+    text-transform:uppercase;
 color: rgb(7, 228, 209);
 background-color: rgb(6, 130, 146);
 border-radius: 80px;
@@ -56,3 +58,4 @@ background-color: rgb(3, 201, 79);
     background-color: rgb(7, 180, 59);
     border-radius: 50px;
 }
+
